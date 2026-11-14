@@ -4,6 +4,9 @@
 
 Модульный монолит на **Spring Boot 4** на бэкенде и **React + TypeScript + Vite** на фронтенде.
 
+
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/5e2d1152-23c1-461e-b701-b71fa4008ebb" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/b8b58904-f799-41e5-9c56-755a0d09abe1" />
 ---
 
 ## Основные возможности
