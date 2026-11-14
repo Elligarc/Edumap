@@ -1,0 +1,120 @@
+@reference '@/app/styles/global.css';
+
+.roadmap-viewer-page {
+  @apply min-h-screen flex flex-col bg-[#fafafa] text-slate-900;
+}
+
+/* Компактный профессиональный контейнер просмотра дорожной карты */
+.roadmap-viewer-main {
+  @apply flex-1 w-full max-w-[1536px] mx-auto px-3 sm:px-4 lg:px-5 py-3 flex flex-col gap-2.5;
+}
+
+/* Стилизация Hero-секции в компактном стиле IDE / Командной панели */
+.roadmap-viewer-main .roadmap-learner-hero {
+  @apply bg-white border border-slate-300 rounded-[4px] p-2.5 sm:px-4 sm:py-2.5 gap-2 shadow-xs;
+}
+
+.roadmap-viewer-main .roadmap-hero-nav {
+  @apply hidden;
+}
+
+.roadmap-viewer-main .roadmap-hero-main {
+  @apply flex flex-row items-center justify-between gap-3;
+}
+
+.roadmap-viewer-main .roadmap-hero-info {
+  @apply max-w-[72%] gap-2;
+}
+
+.roadmap-viewer-main .roadmap-hero-badges {
+  @apply gap-1;
+}
+
+.roadmap-viewer-main .roadmap-hero-badges .ui-badge {
+  @apply text-[10px] px-1.5 py-0.5 rounded-[3px] h-5 leading-none;
+}
+
+.roadmap-viewer-main .roadmap-hero-title {
+  @apply text-lg font-bold text-slate-900 leading-tight flex items-center gap-2;
+}
+
+.roadmap-viewer-main .roadmap-hero-stats {
+  @apply text-[11px] gap-2 text-slate-500;
+}
+
+.roadmap-viewer-main .roadmap-hero-desc {
+  @apply text-[13px] leading-relaxed text-slate-600 max-w-full pt-0.5;
+}
+
+.roadmap-viewer-main .roadmap-hero-actions {
+  @apply pt-1 gap-2;
+}
+
+.roadmap-viewer-main .roadmap-hero-enroll-btn {
+  @apply h-8 px-3 text-xs font-semibold rounded-[4px];
+}
+
+.roadmap-viewer-main .roadmap-hero-rate-btn {
+  @apply h-8 px-2.5 text-xs rounded-[4px];
+}
+
+.roadmap-viewer-main .roadmap-hero-progress-card {
+  @apply min-w-[210px] bg-slate-50 border border-slate-200 rounded-[4px] px-3 py-2 gap-1;
+}
+
+.roadmap-viewer-main .roadmap-hero-progress-header {
+  @apply text-[10px] text-slate-500;
+}
+
+.roadmap-viewer-main .roadmap-hero-progress-value {
+  @apply text-base font-mono font-bold text-[#0284c7];
+}
+
+.roadmap-viewer-main .roadmap-hero-progress-track {
+  @apply h-1 bg-slate-200;
+}
+
+.roadmap-viewer-main .roadmap-hero-progress-subtext {
+  @apply text-[10px] text-slate-500;
+}
+
+/* Компактная рабочая область холста */
+.roadmap-viewer-main .roadmap-viewer-workspace {
+  @apply gap-2.5;
+}
+
+.roadmap-viewer-main .roadmap-viewer-canvas-card {
+  @apply h-[calc(100vh-180px)] min-h-[640px] rounded-[4px] border border-slate-300;
+}
+
+.roadmap-viewer-main .roadmap-viewer-sidebar-card {
+  @apply h-[calc(100vh-180px)] min-h-[640px] w-[350px] rounded-[4px] border border-slate-300;
+}
+
+.roadmap-viewer-loading {
+  @apply flex flex-col items-center justify-center min-h-[60vh] text-slate-500 gap-3;
+}
+
+.roadmap-viewer-loading-spinner {
+  @apply text-(--color-primary) animate-spin;
+}
+
+.roadmap-viewer-loading-text {
+  @apply text-sm font-medium text-(--color-text-muted);
+}
+
+.roadmap-viewer-error {
+  @apply flex flex-col items-center justify-center min-h-[60vh] p-6 text-center;
+}
+
+.roadmap-viewer-error-icon-box {
+  @apply w-12 h-12 rounded-(--radius-sm) bg-(--color-danger-light) flex items-center justify-center text-(--color-danger) mb-4 border border-(--color-danger-border);
+}
+
+.roadmap-viewer-error-title {
+  @apply text-lg font-bold text-slate-900 mb-1.5;
+}
+
+.roadmap-viewer-error-desc {
+  @apply text-sm text-slate-500 mb-6 max-w-md leading-relaxed;
+}

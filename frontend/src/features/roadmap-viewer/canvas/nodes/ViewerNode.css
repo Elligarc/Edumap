@@ -1,0 +1,49 @@
+@reference '@/app/styles/global.css';
+
+.viewer-node {
+  @apply relative min-w-[200px] max-w-[240px] bg-(--color-surface) rounded-sm border border-(--color-border) hover:border-(--color-border-strong) hover:shadow-[1px_1px_0px_0px_rgba(9,10,15,0.12)] p-3.5 transition-all select-none cursor-pointer;
+}
+
+.viewer-node--selected {
+  @apply border-(--color-primary) ring-2 ring-(--color-primary)/20 shadow-[1px_1px_0px_0px_rgba(9,10,15,0.12)];
+}
+
+.viewer-node--completed {
+  @apply bg-(--color-success-light) border-(--color-success);
+}
+
+.viewer-node--start {
+  @apply border-(--color-primary-light) bg-(--color-primary-light)/40;
+}
+
+.viewer-node--end {
+  @apply border-(--color-danger-border) bg-(--color-danger-light)/40;
+}
+
+.viewer-node-badge-start {
+  @apply inline-flex items-center gap-1.5 font-sans text-xs font-medium text-(--color-primary);
+}
+
+.viewer-node-badge-end {
+  @apply inline-flex items-center gap-1.5 font-sans text-xs font-medium text-(--color-danger);
+}
+
+.viewer-node-completed-status {
+  @apply flex items-center gap-1 text-[11px] font-bold text-(--color-success);
+}
+
+.viewer-node-title {
+  @apply text-sm font-bold text-(--color-text) leading-snug break-words;
+}
+
+.viewer-node-content {
+  @apply mt-1 text-[11px] text-(--color-text-muted) line-clamp-2 leading-relaxed;
+}
+
+.viewer-node-resources {
+  @apply mt-2.5 pt-2 border-t border-(--color-surface-muted) flex items-center justify-between text-[11px] text-(--color-text-muted);
+}
+
+.viewer-node-handle {
+  @apply !opacity-0 !pointer-events-none !border-0 !bg-transparent;
+}

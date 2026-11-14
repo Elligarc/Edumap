@@ -1,0 +1,61 @@
+@reference '@/app/styles/global.css';
+
+.profile-settings-page {
+  @apply w-full max-w-5xl;
+}
+
+.profile-settings-header {
+  @apply flex items-center justify-between flex-wrap gap-4 pb-6 mb-8 border-b border-[#cbd5e1];
+}
+
+.profile-settings-title {
+  @apply text-2xl font-bold text-[#090a0f] tracking-tight;
+}
+
+.profile-settings-subtitle {
+  @apply text-xs text-[#64748b] font-sans mt-0.5;
+}
+
+.profile-settings-section {
+  @apply max-w-2xl flex flex-col gap-6;
+}
+
+.profile-settings-card {
+  @apply bg-white border border-[#cbd5e1] rounded-[4px] p-5 sm:p-6 shadow-none flex flex-col gap-5 transition-all hover:border-[#94a3b8] hover:shadow-[1px_1px_0px_0px_rgba(9,10,15,0.12)];
+}
+
+.profile-card-header {
+  @apply pb-3.5 border-b border-[#f1f5f9] flex items-center justify-between gap-4 flex-wrap;
+}
+
+.profile-settings-section-title {
+  @apply text-sm font-semibold text-[#090a0f] tracking-tight;
+}
+
+.profile-settings-card-subtitle {
+  @apply text-xs text-[#64748b] mt-0.5;
+}
+
+.profile-settings-field {
+  @apply flex flex-col gap-1.5;
+}
+
+.profile-settings-label {
+  @apply font-sans text-xs font-semibold text-[#475569];
+}
+
+.profile-email-row {
+  @apply flex items-center gap-2.5;
+}
+
+.profile-password-success {
+  @apply font-sans text-xs font-medium text-[#059669] bg-[#ecfdf5] border border-[#a7f3d0] px-2.5 py-1 rounded-[2px] inline-flex items-center gap-1.5;
+}
+
+.profile-alert--success {
+  @apply p-3 bg-[#ecfdf5] border border-[#a7f3d0] text-[#059669] text-xs font-sans rounded-[2px] flex items-center gap-2;
+}
+
+.profile-alert--error {
+  @apply p-3 bg-[#fef2f2] border border-[#fecaca] text-[#dc2626] text-xs font-sans rounded-[2px] flex items-center gap-2;
+}

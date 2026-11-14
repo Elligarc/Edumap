@@ -1,0 +1,31 @@
+@reference '@/app/styles/global.css';
+
+/* Стили виджета конструктора/редактора дорожной карты */
+
+.roadmap-editor-widget {
+  @apply flex flex-col w-full h-screen overflow-hidden bg-white;
+}
+
+.roadmap-editor-body {
+  @apply flex flex-1 w-full h-[calc(100vh-64px)] relative overflow-hidden;
+}
+
+.roadmap-editor-sidebar {
+  @apply w-[380px] h-full bg-white border-l border-[#E2E8F0] shadow-sm flex flex-col shrink-0 z-10;
+}
+
+.roadmap-editor-placeholder {
+  @apply flex flex-col items-center justify-center h-full p-6 text-center text-[#94A3B8];
+}
+
+.roadmap-editor-placeholder-icon {
+  @apply mb-2 stroke-1;
+}
+
+.roadmap-editor-placeholder-title {
+  @apply text-sm font-medium text-[#64748B];
+}
+
+.roadmap-editor-placeholder-desc {
+  @apply text-xs text-[#94A3B8] mt-1;
+}

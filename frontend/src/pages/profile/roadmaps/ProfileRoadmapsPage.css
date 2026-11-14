@@ -1,0 +1,29 @@
+@reference '@/app/styles/global.css';
+
+.profile-roadmaps-page {
+  @apply w-full max-w-5xl;
+}
+
+.profile-roadmaps-header {
+  @apply flex items-center justify-between flex-wrap gap-4 pb-6 mb-8 border-b border-[#cbd5e1];
+}
+
+.profile-roadmaps-title {
+  @apply text-2xl font-bold text-[#090a0f] tracking-tight;
+}
+
+.profile-section {
+  @apply mb-8 flex flex-col gap-3;
+}
+
+.profile-section-title {
+  @apply text-base font-semibold text-[#090a0f] tracking-tight;
+}
+
+.profile-roadmaps-list {
+  @apply flex flex-col gap-2.5;
+}
+
+.profile-roadmaps-empty {
+  @apply p-8 rounded-[4px] bg-white border border-dashed border-[#cbd5e1] text-center flex flex-col items-center justify-center shadow-none;
+}

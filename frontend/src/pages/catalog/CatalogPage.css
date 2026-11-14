@@ -1,0 +1,90 @@
+@reference '@/app/styles/global.css';
+
+.catalog-page {
+  @apply min-h-screen flex flex-col bg-[#f8fafc] text-[#090a0f];
+}
+
+.catalog-page-main {
+  @apply flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col gap-10;
+}
+
+.catalog-hero {
+  @apply flex flex-col gap-3 max-w-3xl;
+}
+
+.catalog-hero-title {
+  @apply text-3xl sm:text-4xl font-bold text-[#090a0f] tracking-tight;
+}
+
+.catalog-hero-subtitle {
+  @apply text-base sm:text-lg text-[#475569] leading-relaxed;
+}
+
+.catalog-layout {
+  @apply flex items-start gap-8 w-full;
+}
+
+.catalog-content {
+  @apply flex-1 flex flex-col gap-6 min-w-0;
+}
+
+.catalog-toolbar {
+  @apply flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-[#cbd5e1];
+}
+
+.catalog-results-count {
+  @apply text-xs font-sans text-[#64748b];
+}
+
+.catalog-sort-wrap {
+  @apply flex items-center gap-2 self-end sm:self-auto;
+}
+
+.catalog-sort-label {
+  @apply text-xs sm:text-sm text-[#64748b] whitespace-nowrap;
+}
+
+.catalog-sort-select {
+  @apply text-xs sm:text-sm font-medium bg-white border border-[#cbd5e1] rounded-[4px] px-2.5 py-1.5 text-[#090a0f] shadow-none focus:outline-none focus:ring-2 focus:ring-[#0284c7]/20 cursor-pointer;
+}
+
+.catalog-grid {
+  @apply flex flex-col gap-3.5;
+}
+
+.catalog-empty {
+  @apply flex flex-col items-center justify-center p-12 bg-(--color-surface) rounded-(--radius-sm) border border-(--color-border) text-center shadow-none;
+}
+
+.catalog-empty-icon {
+  @apply w-12 h-12 text-(--color-text-subtle) mb-3;
+}
+
+.catalog-empty-title {
+  @apply text-lg font-semibold text-(--color-text) mb-1;
+}
+
+.catalog-empty-desc {
+  @apply text-sm text-(--color-text-muted) max-w-sm mb-5 leading-relaxed;
+}
+
+/* Пагинация */
+.catalog-pagination {
+  @apply flex items-center justify-center gap-1.5 pt-6 mt-4;
+}
+
+.catalog-page-btn {
+  @apply min-w-10 h-10 px-3 flex items-center justify-center rounded-(--radius-sm) text-sm font-sans font-semibold tabular-nums transition-colors cursor-pointer select-none;
+}
+
+.catalog-page-btn--active {
+  @apply bg-(--color-primary) text-white shadow-none pointer-events-none;
+}
+
+.catalog-page-btn--inactive {
+  @apply bg-(--color-surface) text-(--color-text) border border-(--color-border) hover:bg-(--color-surface-muted);
+}
+
+.catalog-page-btn--disabled {
+  @apply opacity-40 cursor-not-allowed pointer-events-none;
+}

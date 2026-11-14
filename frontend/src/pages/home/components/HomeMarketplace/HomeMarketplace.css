@@ -1,0 +1,29 @@
+@reference '@/app/styles/global.css';
+
+.home-marketplace {
+  @apply w-full py-16 sm:py-20 bg-white border-t border-slate-200/60;
+}
+
+.home-marketplace-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-8;
+}
+
+.home-marketplace-header {
+  @apply flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-4 border-b border-slate-200/60;
+}
+
+.home-marketplace-title {
+  @apply text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight;
+}
+
+.home-marketplace-subtitle {
+  @apply text-sm sm:text-base text-slate-500 mt-1.5;
+}
+
+.home-marketplace-all-link {
+  @apply inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 hover:text-slate-900 transition-colors whitespace-nowrap self-start sm:self-auto;
+}
+
+.home-marketplace-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-6;
+}

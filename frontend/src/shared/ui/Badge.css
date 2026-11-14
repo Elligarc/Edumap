@@ -1,0 +1,41 @@
+@reference '@/app/styles/global.css';
+
+.ui-badge {
+  @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-(--radius-xs) font-sans text-xs font-medium select-none;
+}
+
+.ui-badge--default {
+  @apply bg-(--color-surface-muted) text-(--color-text-secondary) border border-(--color-border);
+}
+
+.ui-badge--primary {
+  @apply bg-(--color-primary-light) text-(--color-primary) border border-sky-200;
+}
+
+.ui-badge--start {
+  @apply bg-(--color-primary-light) text-(--color-primary) border border-sky-200;
+}
+
+.ui-badge--end {
+  @apply bg-(--color-danger-light) text-(--color-danger) border border-(--color-danger-border);
+}
+
+.ui-badge--success {
+  @apply bg-(--color-success-light) text-(--color-success) border border-(--color-success-border);
+}
+
+.ui-badge--warning {
+  @apply bg-(--color-warning-light) text-(--color-warning) border border-(--color-warning-border);
+}
+
+.ui-badge--danger {
+  @apply bg-(--color-danger-light) text-(--color-danger) border border-(--color-danger-border);
+}
+
+.ui-badge--signal {
+  @apply bg-(--color-signal-light) text-(--color-signal-hover) border border-(--color-signal-border);
+}
+
+.ui-badge--outline {
+  @apply bg-transparent text-(--color-text-muted) border border-(--color-border);
+}

@@ -1,0 +1,110 @@
+@import 'tailwindcss';
+@import '@xyflow/react/dist/style.css';
+@import '@/shared/config/tokens.css';
+
+@theme {
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  --color-canvas: var(--color-canvas);
+  --color-surface: var(--color-surface);
+  --color-surface-subtle: var(--color-surface-subtle);
+  --color-surface-muted: var(--color-surface-muted);
+
+  --color-text-main: var(--color-text);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-muted: var(--color-text-muted);
+  --color-text-subtle: var(--color-text-subtle);
+  --color-text: var(--color-text);
+
+  --color-border-main: var(--color-border);
+  --color-border-subtle: var(--color-border-subtle);
+  --color-border-strong: var(--color-border-strong);
+  --color-border: var(--color-border);
+
+  --color-primary: var(--color-primary);
+  --color-primary-main: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-primary-active: var(--color-primary-active);
+  --color-primary-light: var(--color-primary-light);
+  --color-primary-foreground: var(--color-primary-foreground);
+
+  --color-accent-main: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-accent-light: var(--color-accent-light);
+
+  --color-signal: var(--color-signal);
+  --color-signal-hover: var(--color-signal-hover);
+  --color-signal-light: var(--color-signal-light);
+
+  --color-danger: var(--color-danger);
+  --color-danger-hover: var(--color-danger-hover);
+  --color-danger-light: var(--color-danger-light);
+  --color-danger-border: var(--color-danger-border);
+
+  --color-success: var(--color-success);
+  --color-success-light: var(--color-success-light);
+  --color-success-border: var(--color-success-border);
+
+  --color-warning: var(--color-warning);
+  --color-warning-light: var(--color-warning-light);
+  --color-warning-border: var(--color-warning-border);
+
+  --radius-xs: var(--radius-xs);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+
+  --shadow-technical-lift: var(--shadow-technical-lift);
+  --shadow-card: var(--shadow-card);
+}
+
+::selection {
+  background-color: #bae6fd;
+  color: #082f49;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* React Flow canvas layering:
+ * 0: sections (background grouping containers)
+ * 1: edges (connecting lines rendered above sections so they are selectable)
+ * 2: text nodes
+ * 3: roadmap nodes (constructorNode, viewerNode)
+ * 10: edge label renderer (delete button for selected edges)
+ */
+.react-flow__node-sectionNode,
+.react-flow__node-sectionNode.selected {
+  z-index: 0 !important;
+}
+
+.react-flow__edges svg {
+  z-index: 1 !important;
+}
+
+.react-flow__node-textNode {
+  z-index: 2 !important;
+}
+
+.react-flow__node-constructorNode,
+.react-flow__node-viewerNode {
+  z-index: 3 !important;
+}
+
+.react-flow__edgelabel-renderer {
+  z-index: 10 !important;
+}

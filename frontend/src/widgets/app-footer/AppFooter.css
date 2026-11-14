@@ -1,0 +1,37 @@
+@reference '@/app/styles/global.css';
+
+.app-footer {
+  @apply py-6 px-6 md:px-20 bg-white border-t border-[#cbd5e1] mt-auto w-full shrink-0;
+}
+
+.app-footer-container {
+  @apply max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4;
+}
+
+.app-footer-logo {
+  @apply flex items-center gap-2.5 no-underline;
+}
+
+.app-footer-logo-badge {
+  @apply w-7 h-7 rounded-[4px] bg-[#0284c7] flex items-center justify-center text-white;
+}
+
+.app-footer-logo-text {
+  @apply font-bold text-sm text-[#090a0f] tracking-tight;
+}
+
+.app-footer-nav {
+  @apply flex items-center gap-6;
+}
+
+.app-footer-link {
+  @apply text-xs text-[#64748b] hover:text-[#090a0f] transition-colors no-underline;
+}
+
+.app-footer-socials {
+  @apply flex items-center gap-2.5;
+}
+
+.app-footer-social-btn {
+  @apply w-8 h-8 rounded-full bg-[#f1f5f9] border border-[#cbd5e1] flex items-center justify-center text-[#64748b] hover:text-[#090a0f] hover:bg-[#e2e8f0] transition-colors;
+}

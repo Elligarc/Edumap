@@ -1,0 +1,26 @@
+spring:
+  # Datasource в тестах предоставляется Testcontainers (@ServiceConnection) —
+  # см. src/test/java/com/roadmap/TestcontainersConfiguration.java
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+    clean-disabled: true
+
+server:
+  port: 0
+
+app:
+  seed:
+    enabled: false
+    reset: false
+  jwt:
+    secret: super-secret-jwt-key-for-educational-roadmap-platform-2026-minimum-256-bits!
+    access-token-expiration-ms: 900000
+    refresh-token-expiration-ms: 2592000000
+
+logging:
+  level:
+    root: WARN
+    com.roadmap: INFO

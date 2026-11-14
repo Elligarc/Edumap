@@ -1,0 +1,33 @@
+@reference '@/app/styles/global.css';
+
+.roadmap-constructor-page {
+  @apply min-h-screen flex flex-col;
+}
+
+.roadmap-constructor-loading {
+  @apply flex flex-col items-center justify-center min-h-screen bg-[#F8FAFC];
+}
+
+.roadmap-constructor-loading-spinner {
+  @apply text-[#0284c7] animate-spin mb-3;
+}
+
+.roadmap-constructor-loading-text {
+  @apply text-sm font-medium text-[#64748B];
+}
+
+.roadmap-constructor-error {
+  @apply flex flex-col items-center justify-center min-h-screen bg-[#F8FAFC] p-6 text-center;
+}
+
+.roadmap-constructor-error-icon-box {
+  @apply w-12 h-12 rounded-(--radius-sm) bg-(--color-danger-light) flex items-center justify-center text-(--color-danger) mb-4 border border-(--color-danger-border);
+}
+
+.roadmap-constructor-error-title {
+  @apply text-base font-bold text-[#0F172A] mb-1;
+}
+
+.roadmap-constructor-error-desc {
+  @apply text-xs text-[#64748B] mb-6 max-w-sm;
+}

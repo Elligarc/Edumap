@@ -1,0 +1,86 @@
+@reference '@/app/styles/global.css';
+
+.roadmap-learner-hero {
+  @apply flex flex-col gap-6 w-full pb-8 border-b border-slate-200/80;
+}
+
+.roadmap-hero-nav {
+  @apply flex items-center justify-between w-full;
+}
+
+.roadmap-hero-back-link {
+  @apply inline-flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors cursor-pointer select-none py-1.5 px-2.5 -ml-2.5 rounded-lg hover:bg-slate-100/70;
+}
+
+.roadmap-hero-main {
+  @apply flex flex-col lg:flex-row lg:items-end justify-between gap-8 w-full;
+}
+
+.roadmap-hero-info {
+  @apply flex flex-col gap-3.5 max-w-3xl;
+}
+
+.roadmap-hero-badges {
+  @apply flex items-center gap-2.5 flex-wrap;
+}
+
+.roadmap-hero-title {
+  @apply text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight;
+}
+
+.roadmap-hero-stats {
+  @apply flex items-center gap-3 sm:gap-4 text-xs sm:text-sm text-slate-500 flex-wrap;
+}
+
+.roadmap-hero-rating {
+  @apply inline-flex items-center gap-1 font-bold text-slate-800;
+}
+
+.roadmap-hero-desc {
+  @apply text-sm sm:text-base text-slate-600 leading-relaxed pt-1;
+}
+
+.roadmap-hero-actions {
+  @apply flex items-center gap-3 pt-2 flex-wrap;
+}
+
+.roadmap-hero-enroll-btn {
+  @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-[4px] font-semibold text-sm shadow-none transition-all cursor-pointer select-none;
+}
+
+.roadmap-hero-enroll-btn--idle {
+  @apply bg-[#0284c7] hover:bg-[#0369a1] active:bg-[#075985] text-white border border-[#0369a1];
+}
+
+.roadmap-hero-enroll-btn--enrolled {
+  @apply bg-[#ecfdf5] text-[#059669] border border-[#a7f3d0] hover:bg-[#d1fae5];
+}
+
+.roadmap-hero-rate-btn {
+  @apply inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#fffbeb] hover:bg-[#fef3c7] text-[#d97706] border border-[#fde68a] rounded-[4px] font-medium text-sm transition-colors cursor-pointer select-none;
+}
+
+/* Карточка прогресса справа */
+.roadmap-hero-progress-card {
+  @apply bg-white p-5 rounded-[4px] border border-[#cbd5e1] shadow-none flex flex-col gap-3 min-w-[260px] shrink-0;
+}
+
+.roadmap-hero-progress-header {
+  @apply flex items-center justify-between font-sans text-xs font-semibold uppercase tracking-wider text-[#64748b];
+}
+
+.roadmap-hero-progress-value {
+  @apply text-lg font-sans font-bold tabular-nums text-[#0284c7];
+}
+
+.roadmap-hero-progress-track {
+  @apply w-full h-2 bg-[#f1f5f9] rounded-full overflow-hidden;
+}
+
+.roadmap-hero-progress-fill {
+  @apply h-full bg-[#0284c7] transition-all duration-300 rounded-full;
+}
+
+.roadmap-hero-progress-subtext {
+  @apply text-xs font-sans tabular-nums text-[#64748b];
+}

@@ -1,0 +1,21 @@
+@reference '@/app/styles/global.css';
+
+.text-properties-panel {
+  @apply flex flex-col h-full overflow-y-auto p-6 gap-6;
+}
+
+.text-properties-panel-header {
+  @apply flex items-center justify-between pb-3 border-b border-[#F1F5F9];
+}
+
+.text-properties-panel-title {
+  @apply text-sm font-bold text-[#0F172A];
+}
+
+.text-properties-fields {
+  @apply flex flex-col gap-4;
+}
+
+.text-properties-footer {
+  @apply mt-auto pt-6 border-t border-[#F1F5F9];
+}

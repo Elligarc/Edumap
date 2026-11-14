@@ -1,0 +1,5 @@
+@reference '@/app/styles/global.css';
+
+.custom-connection-edge-delete-btn {
+  @apply w-5 h-5 bg-[#EF4444] hover:bg-[#DC2626] text-white rounded-full flex items-center justify-center shadow-md cursor-pointer transition-transform hover:scale-110;
+}

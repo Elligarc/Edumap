@@ -1,0 +1,33 @@
+@reference '@/app/styles/global.css';
+
+.section-properties-panel {
+  @apply flex flex-col h-full overflow-y-auto p-6 gap-6;
+}
+
+.section-properties-panel-header {
+  @apply flex items-center justify-between pb-3 border-b border-[#F1F5F9];
+}
+
+.section-properties-panel-title {
+  @apply text-sm font-bold text-[#0F172A];
+}
+
+.section-properties-fields {
+  @apply flex flex-col gap-4;
+}
+
+.section-properties-dims-row {
+  @apply grid grid-cols-2 gap-3;
+}
+
+.section-properties-hint-box {
+  @apply p-3 bg-(--color-surface-subtle) border border-(--color-border-subtle) rounded-(--radius-sm);
+}
+
+.section-properties-hint-text {
+  @apply text-xs text-slate-600 leading-relaxed;
+}
+
+.section-properties-footer {
+  @apply mt-auto pt-6 border-t border-[#F1F5F9];
+}

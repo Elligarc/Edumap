@@ -1,0 +1,56 @@
+spring:
+  application:
+    name: roadmap-platform
+  profiles:
+    default: dev
+  config:
+    import:
+      - optional:file:.env[.properties]
+      - optional:file:../.env[.properties]
+  # Jackson 3 (tools.jackson). Отдельно задавать запись дат не требуется:
+  # DateTimeFeature.WRITE_DATES_AS_TIMESTAMPS по умолчанию выключен,
+  # даты и временные метки сериализуются в ISO-8601.
+  jpa:
+    open-in-view: false
+    hibernate:
+      # Схема управляется Flyway; Hibernate только валидирует соответствие
+      ddl-auto: validate
+  flyway:
+    locations: classpath:db/migration
+    enabled: true
+
+app:
+  seed:
+    enabled: ${APP_SEED_ENABLED}
+    reset: ${APP_SEED_RESET}
+  jwt:
+    secret: ${JWT_SECRET}
+    access-token-expiration-ms: ${JWT_ACCESS_EXPIRATION_MS}
+    refresh-token-expiration-ms: ${JWT_REFRESH_EXPIRATION_MS}
+
+server:
+  port: ${BACKEND_PORT}
+  error:
+    include-stacktrace: never
+    include-message: always
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: never
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+
+logging:
+  level:
+    root: INFO
+    com.roadmap: INFO

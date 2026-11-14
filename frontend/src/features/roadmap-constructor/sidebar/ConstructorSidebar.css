@@ -1,0 +1,23 @@
+@reference '@/app/styles/global.css';
+
+/* Стили сайдбара конструктора */
+
+.constructor-sidebar {
+  @apply w-full h-full flex flex-col;
+}
+
+.constructor-sidebar-placeholder {
+  @apply flex flex-col items-center justify-center h-full p-6 text-center text-[#94A3B8];
+}
+
+.constructor-sidebar-placeholder-icon {
+  @apply mb-2 stroke-1;
+}
+
+.constructor-sidebar-placeholder-title {
+  @apply text-sm font-medium text-[#64748B];
+}
+
+.constructor-sidebar-placeholder-desc {
+  @apply text-xs text-[#94A3B8] mt-1;
+}

@@ -1,0 +1,25 @@
+@reference '@/app/styles/global.css';
+
+.constructor-toolbar {
+  @apply absolute left-6 top-6 z-10 flex flex-col gap-1.5 p-1.5 bg-white border border-[#cbd5e1] rounded-[6px] shadow-[0_4px_12px_-2px_rgba(9,10,15,0.08),0_0_0_1px_#cbd5e1];
+}
+
+.constructor-toolbar-btn {
+  @apply w-9 h-9 rounded-[4px] flex items-center justify-center transition-colors cursor-pointer;
+}
+
+.constructor-toolbar-btn--active {
+  @apply bg-[#f0f9ff] text-[#0284c7] hover:bg-[#e0f2fe];
+}
+
+.constructor-toolbar-btn--default {
+  @apply text-[#64748b] hover:text-[#0284c7] hover:bg-[#f1f5f9];
+}
+
+.constructor-toolbar-btn--draggable {
+  @apply cursor-grab active:cursor-grabbing;
+}
+
+.constructor-toolbar-divider {
+  @apply w-full h-px bg-[#e2e8f0] my-0.5;
+}

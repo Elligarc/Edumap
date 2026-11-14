@@ -1,0 +1,25 @@
+@reference '@/app/styles/global.css';
+
+.ui-textarea-container {
+  @apply flex flex-col gap-1.5;
+}
+
+.ui-textarea-label {
+  @apply font-sans text-xs font-semibold text-[#475569];
+}
+
+.ui-textarea {
+  @apply w-full p-3 text-sm text-[#090a0f] placeholder:text-[#94a3b8] bg-white border border-[#cbd5e1] rounded-[2px] shadow-none outline-none resize-none transition-all hover:border-[#94a3b8];
+}
+
+.ui-textarea:focus {
+  @apply border-[#0284c7] ring-2 ring-[#0284c7]/15;
+}
+
+.ui-textarea-error {
+  @apply border-[#dc2626] hover:border-[#b91c1c];
+}
+
+.ui-textarea-error:focus {
+  @apply border-[#dc2626] ring-2 ring-[#dc2626]/15;
+}

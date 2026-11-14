@@ -1,0 +1,21 @@
+@reference '@/app/styles/global.css';
+
+.section-node-container {
+  @apply w-full h-full rounded-[6px] border-2 border-dashed bg-[#f8fafc]/70 p-4 transition-all pointer-events-auto border-[#cbd5e1] hover:border-[#94a3b8];
+}
+
+.section-node-container--selected {
+  @apply border-[#0284c7] ring-2 ring-[#0284c7]/20 bg-[#f0f9ff]/40;
+}
+
+.section-node-header {
+  @apply flex items-center gap-2 mb-3 pointer-events-none select-none;
+}
+
+.section-node-icon {
+  @apply text-[#64748B];
+}
+
+.section-node-title {
+  @apply text-xs font-bold text-[#0F172A] tracking-wide;
+}

@@ -1,0 +1,12 @@
+@reference '@/app/styles/global.css';
+
+/* Стили холста конструктора дорожных карт */
+
+.constructor-canvas,
+.constructor-canvas-wrapper {
+  @apply flex-1 w-full h-full relative bg-[#f8fafc];
+}
+
+.constructor-canvas-controls {
+  @apply bg-white border border-[#cbd5e1] shadow-none rounded-[4px] overflow-hidden;
+}

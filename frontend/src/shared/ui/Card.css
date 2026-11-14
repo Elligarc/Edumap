@@ -1,0 +1,13 @@
+@reference '@/app/styles/global.css';
+
+.ui-card {
+  @apply bg-(--color-surface) border border-(--color-border) rounded-(--radius-sm) shadow-(--shadow-card) transition-all duration-100 overflow-hidden text-left;
+}
+
+.ui-card--interactive {
+  @apply hover:border-(--color-border-strong) hover:shadow-(--shadow-technical-lift);
+}
+
+.ui-card--highlight {
+  @apply hover:border-(--color-primary) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-primary)/20;
+}

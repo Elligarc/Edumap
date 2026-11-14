@@ -1,0 +1,33 @@
+@reference '@/app/styles/global.css';
+
+.ui-select-container {
+  @apply flex flex-col gap-1.5;
+}
+
+.ui-select-label {
+  @apply font-sans text-xs font-semibold text-[#475569];
+}
+
+.ui-select-wrapper {
+  @apply relative w-full;
+}
+
+.ui-select {
+  @apply w-full h-9 pl-3 pr-8 text-sm text-[#090a0f] bg-white border border-[#cbd5e1] rounded-[2px] shadow-none appearance-none outline-none cursor-pointer transition-all hover:border-[#94a3b8];
+}
+
+.ui-select:focus {
+  @apply border-[#0284c7] ring-2 ring-[#0284c7]/15;
+}
+
+.ui-select-error {
+  @apply border-[#dc2626] hover:border-[#b91c1c];
+}
+
+.ui-select-error:focus {
+  @apply border-[#dc2626] ring-2 ring-[#dc2626]/15;
+}
+
+.ui-select-icon {
+  @apply absolute right-2.5 top-1/2 -translate-y-1/2 text-[#64748b] pointer-events-none;
+}

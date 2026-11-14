@@ -1,0 +1,25 @@
+# Secrets
+.env
+
+# Java / Maven
+target/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+.sts4-cache
+.springBeans
+.factorypath
+
+# OS
+.DS_Store
+Thumbs.db

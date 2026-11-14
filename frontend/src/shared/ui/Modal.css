@@ -1,0 +1,29 @@
+@reference '@/app/styles/global.css';
+
+.ui-modal-root {
+  @apply fixed inset-0 z-[400] flex items-center justify-center p-4;
+}
+
+.ui-modal-overlay {
+  @apply fixed inset-0 bg-slate-900/40 backdrop-blur-xs transition-opacity;
+}
+
+.ui-modal-dialog {
+  @apply relative w-full max-w-[440px] bg-white rounded-[8px] shadow-[0_16px_32px_-8px_rgba(9,10,15,0.16)] border border-[#cbd5e1] overflow-hidden z-10 transition-all duration-100;
+}
+
+.ui-modal-header {
+  @apply flex items-center justify-between px-5 py-3.5 border-b border-[#cbd5e1];
+}
+
+.ui-modal-title {
+  @apply text-sm font-semibold text-[#090a0f] tracking-tight;
+}
+
+.ui-modal-close-btn {
+  @apply p-1 text-[#64748b] hover:text-[#090a0f] hover:bg-[#f1f5f9] rounded-[2px] transition-colors cursor-pointer;
+}
+
+.ui-modal-body {
+  @apply p-5 max-h-[85vh] overflow-y-auto text-sm text-[#334155];
+}

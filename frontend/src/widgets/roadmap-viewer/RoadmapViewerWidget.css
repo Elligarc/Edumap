@@ -1,0 +1,29 @@
+@reference '@/app/styles/global.css';
+
+/* Стили виджета просмотра дорожной карты для обучающегося */
+
+.roadmap-viewer-widget {
+  @apply flex flex-col w-full gap-6;
+}
+
+.roadmap-viewer-workspace {
+  @apply flex flex-col lg:flex-row items-stretch gap-6 w-full relative;
+}
+
+/* Увеличенная область холста с просторным полем обзора */
+.roadmap-viewer-canvas-card {
+  @apply flex-1 h-[680px] lg:h-[820px] bg-(--color-surface-subtle) border border-(--color-border) rounded-(--radius-sm) overflow-hidden shadow-xs relative flex;
+}
+
+.roadmap-viewer-sidebar-card {
+  @apply hidden lg:flex w-[380px] h-[820px] bg-(--color-surface) border border-(--color-border) rounded-(--radius-sm) shadow-xs overflow-hidden shrink-0 flex-col;
+}
+
+/* Мобильный Drawer для деталей узла */
+.roadmap-viewer-mobile-drawer-overlay {
+  @apply fixed inset-0 bg-slate-900/40 backdrop-blur-xs z-50 flex justify-end lg:hidden;
+}
+
+.roadmap-viewer-mobile-drawer {
+  @apply w-full max-w-md h-full bg-white shadow-2xl flex flex-col overflow-y-auto;
+}

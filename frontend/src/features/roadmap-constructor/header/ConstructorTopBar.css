@@ -1,0 +1,65 @@
+@reference '@/app/styles/global.css';
+
+.constructor-topbar {
+  @apply h-14 px-6 bg-(--color-surface) border-b border-(--color-border) flex items-center justify-between z-20 shrink-0;
+}
+
+.constructor-topbar-left {
+  @apply flex items-center gap-4;
+}
+
+.constructor-topbar-back-btn {
+  @apply w-8 h-8 rounded-(--radius-sm) bg-(--color-surface-subtle) border border-(--color-border) flex items-center justify-center text-(--color-text-muted) hover:text-(--color-text) hover:bg-(--color-surface-muted) transition-colors cursor-pointer;
+}
+
+.constructor-topbar-divider {
+  @apply w-px h-6 bg-(--color-border);
+}
+
+.constructor-topbar-title-box {
+  @apply flex flex-col;
+}
+
+.constructor-topbar-title-row {
+  @apply flex items-center gap-2;
+}
+
+.constructor-topbar-title {
+  @apply text-sm font-semibold text-(--color-text) truncate max-w-[320px];
+}
+
+.constructor-topbar-status {
+  @apply font-sans text-xs text-(--color-text-muted);
+}
+
+.constructor-topbar-right {
+  @apply flex items-center gap-3;
+}
+
+.constructor-topbar-history {
+  @apply flex items-center gap-1.5 mr-1;
+}
+
+.constructor-topbar-icon-btn {
+  @apply w-8 h-8 rounded-(--radius-sm) bg-(--color-surface-subtle) border border-(--color-border) flex items-center justify-center text-(--color-text-muted) hover:text-(--color-text) hover:bg-(--color-surface-muted) transition-colors cursor-pointer;
+}
+
+.constructor-topbar-icon-btn:disabled {
+  @apply opacity-35 cursor-not-allowed hover:bg-(--color-surface-subtle) hover:text-(--color-text-muted);
+}
+
+.constructor-mode-toggle {
+  @apply flex p-0.5 bg-(--color-surface-muted) rounded-(--radius-sm) border border-(--color-border);
+}
+
+.constructor-mode-btn {
+  @apply px-3 py-1 text-xs font-sans font-medium rounded-(--radius-xs) transition-all cursor-pointer;
+}
+
+.constructor-mode-btn--active {
+  @apply bg-(--color-surface) text-(--color-text) shadow-xs;
+}
+
+.constructor-mode-btn--inactive {
+  @apply text-(--color-text-muted) hover:text-(--color-text);
+}

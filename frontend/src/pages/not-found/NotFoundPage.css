@@ -1,0 +1,17 @@
+@reference '@/app/styles/global.css';
+
+.not-found-page {
+  @apply flex flex-col items-center justify-center min-h-screen bg-[#F8FAFC] p-6 text-center;
+}
+
+.not-found-title {
+  @apply text-2xl font-bold text-[#0F172A] mb-2;
+}
+
+.not-found-desc {
+  @apply text-sm text-[#64748B] mb-6;
+}
+
+.not-found-link {
+  @apply text-sm font-semibold text-[#0284c7] hover:underline;
+}

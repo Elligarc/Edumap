@@ -1,0 +1,21 @@
+@reference '@/app/styles/global.css';
+
+.register-page {
+  @apply min-h-screen flex flex-col bg-[#F8FAFC];
+}
+
+.register-page-main {
+  @apply flex-1 flex flex-col items-center justify-center px-4 py-12;
+}
+
+.register-page-card {
+  @apply w-full max-w-[380px] flex flex-col items-center bg-white p-6 sm:p-8 rounded-[6px] border border-[#cbd5e1] shadow-none;
+}
+
+.register-page-title {
+  @apply text-xl font-bold text-[#090a0f] tracking-tight mb-6 text-center;
+}
+
+.register-page-form {
+  @apply w-full flex flex-col gap-3.5;
+}

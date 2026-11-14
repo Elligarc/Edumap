@@ -1,0 +1,9 @@
+@reference '@/app/styles/global.css';
+
+.home-page {
+  @apply min-h-screen flex flex-col bg-white text-slate-900;
+}
+
+.home-page-main {
+  @apply flex-1 flex flex-col w-full;
+}

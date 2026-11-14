@@ -1,0 +1,131 @@
+@reference '@/app/styles/global.css';
+
+.roadmap-card {
+  @apply bg-(--color-surface) border border-(--color-border) rounded-(--radius-sm) shadow-(--shadow-card) hover:border-(--color-border-strong) hover:shadow-(--shadow-technical-lift) transition-all duration-100 overflow-hidden text-left;
+}
+
+.roadmap-card-link {
+  @apply block py-4 px-4 sm:px-6 w-full;
+}
+
+.roadmap-card-layout {
+  @apply flex flex-col sm:flex-row sm:items-start justify-between gap-4;
+}
+
+.roadmap-card-main {
+  @apply flex-1 min-w-0;
+}
+
+.roadmap-card-header-line {
+  @apply flex items-center gap-2 mb-1.5 flex-wrap;
+}
+
+.roadmap-card-category {
+  @apply text-xs font-sans font-semibold text-(--color-primary) tracking-normal;
+}
+
+.roadmap-card-separator {
+  @apply text-(--color-border);
+}
+
+.roadmap-card-author {
+  @apply text-xs text-(--color-text-muted);
+}
+
+.roadmap-card-title {
+  @apply text-base font-semibold text-(--color-text) group-hover:text-(--color-primary) transition-colors mb-1.5 tracking-tight line-clamp-1;
+}
+
+.roadmap-card-description {
+  @apply text-sm text-(--color-text-secondary) leading-relaxed mb-4 max-w-2xl line-clamp-2;
+}
+
+.roadmap-card-meta {
+  @apply flex items-center gap-2.5 text-xs font-sans text-(--color-text-muted) tabular-nums flex-wrap;
+}
+
+.roadmap-card-meta-item {
+  @apply inline-flex items-center gap-1.5;
+}
+
+.roadmap-card-meta-rating {
+  @apply font-semibold text-(--color-text) inline-flex items-center gap-1;
+}
+
+.roadmap-card-rating-count {
+  @apply text-xs font-normal text-(--color-text-muted);
+}
+
+.roadmap-card-rating-star {
+  @apply fill-amber-400 text-amber-500 shrink-0;
+}
+
+.roadmap-card-sidebar {
+  @apply flex sm:flex-col items-end justify-between sm:justify-between shrink-0 sm:self-stretch pt-2 sm:pt-0 border-t sm:border-t-0 sm:border-l sm:border-dashed border-(--color-border-subtle) sm:pl-4 min-w-[160px];
+}
+
+.roadmap-card-badges-top {
+  @apply flex items-center gap-2 flex-wrap justify-end;
+}
+
+.roadmap-card-badge-official {
+  @apply inline-flex items-center gap-1.5 px-2 py-0.5 rounded-(--radius-xs) font-sans text-xs font-medium bg-(--color-primary-light) text-(--color-primary) border border-sky-200;
+}
+
+/* Индикатор сложности в строке метаданных: ступенчатая шкала Coursera Metarow в палитре приложения */
+.roadmap-card-difficulty {
+  @apply inline-flex items-center gap-1.5 select-none font-normal text-xs text-(--color-text-muted);
+}
+
+.roadmap-card-difficulty-bars {
+  @apply inline-flex items-end gap-[1.5px] h-[11px] shrink-0;
+}
+
+.roadmap-card-difficulty-bar {
+  @apply w-[2px] rounded-[0.5px] transition-colors;
+}
+
+.roadmap-card-difficulty-bar--active {
+  @apply bg-(--color-text-muted);
+}
+
+.roadmap-card-difficulty-bar--inactive {
+  @apply bg-(--color-border);
+}
+
+.roadmap-card-difficulty-bar.bar-1 {
+  @apply h-[4px];
+}
+
+.roadmap-card-difficulty-bar.bar-2 {
+  @apply h-[7.5px];
+}
+
+.roadmap-card-difficulty-bar.bar-3 {
+  @apply h-[11px];
+}
+
+.roadmap-card-difficulty-label {
+  @apply whitespace-nowrap;
+}
+
+.roadmap-card-footer-right {
+  @apply flex items-center gap-3 mt-auto pt-2 sm:pt-4;
+}
+
+.roadmap-card-price {
+  @apply text-sm font-sans font-semibold tabular-nums bg-(--color-surface-muted) border border-(--color-border) px-2 py-0.5 rounded-(--radius-xs);
+}
+
+.roadmap-card-price--free {
+  @apply text-(--color-success);
+}
+
+.roadmap-card-price--paid {
+  @apply text-(--color-text);
+}
+
+.roadmap-card-action {
+  @apply w-8 h-8 rounded-(--radius-xs) bg-(--color-surface) border border-(--color-border) group-hover:bg-(--color-primary) group-hover:border-(--color-primary-hover) group-hover:text-white text-(--color-text-muted) flex items-center justify-center transition-colors;
+  box-shadow: 0 1px 2px rgba(9, 10, 15, 0.06);
+}

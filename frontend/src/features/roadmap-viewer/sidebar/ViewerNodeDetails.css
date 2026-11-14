@@ -1,0 +1,73 @@
+@reference '@/app/styles/global.css';
+
+.viewer-node-details {
+  @apply flex flex-col h-full overflow-y-auto p-6 gap-6 bg-white select-none;
+}
+
+.viewer-node-details-empty {
+  @apply flex flex-col items-center justify-center h-full p-8 text-center text-slate-400 gap-2;
+}
+
+.viewer-node-details-header {
+  @apply flex items-center justify-between pb-3.5 border-b border-slate-100;
+}
+
+.viewer-node-details-step-badge {
+  @apply px-2.5 py-0.5 rounded-[2px] font-sans text-xs font-semibold uppercase tracking-wider bg-[#f0f9ff] text-[#0284c7] border border-[#bae6fd];
+}
+
+.viewer-node-details-close-btn {
+  @apply p-1 rounded-[2px] text-[#64748b] hover:text-[#090a0f] hover:bg-[#f1f5f9] transition-colors cursor-pointer;
+}
+
+.viewer-node-details-badges {
+  @apply flex items-center gap-2 flex-wrap;
+}
+
+.viewer-node-details-completed-badge {
+  @apply flex items-center gap-1 font-semibold;
+}
+
+.viewer-node-details-body {
+  @apply flex flex-col gap-2.5;
+}
+
+.viewer-node-details-title {
+  @apply text-xl font-bold text-slate-900 leading-snug;
+}
+
+.viewer-node-details-content {
+  @apply text-sm text-slate-600 whitespace-pre-wrap leading-relaxed;
+}
+
+.viewer-node-details-empty-content {
+  @apply text-xs text-slate-400 italic;
+}
+
+.viewer-node-details-resources {
+  @apply pt-4 border-t border-slate-100 flex flex-col gap-3;
+}
+
+.viewer-node-details-resources-title {
+  @apply flex items-center gap-1.5 font-bold text-slate-900;
+}
+
+.viewer-node-details-resources-list {
+  @apply flex flex-col gap-2;
+}
+
+.viewer-node-details-footer {
+  @apply mt-auto pt-6 border-t border-slate-100;
+}
+
+.viewer-node-complete-btn {
+  @apply w-full h-10 px-4 rounded-[4px] font-semibold text-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-none select-none;
+}
+
+.viewer-node-complete-btn--incomplete {
+  @apply bg-[#0284c7] hover:bg-[#0369a1] active:bg-[#075985] text-white border border-[#0369a1];
+}
+
+.viewer-node-complete-btn--completed {
+  @apply bg-[#ecfdf5] text-[#059669] border border-[#a7f3d0] hover:bg-[#d1fae5];
+}

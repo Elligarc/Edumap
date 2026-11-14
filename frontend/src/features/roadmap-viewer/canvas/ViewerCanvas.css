@@ -1,0 +1,20 @@
+@reference '@/app/styles/global.css';
+
+/* Стили холста просмотрщика дорожных карт */
+
+.viewer-canvas {
+  @apply flex-1 w-full h-full relative bg-[#f8fafc] rounded-[4px] border border-[#cbd5e1] overflow-hidden;
+}
+
+.viewer-canvas-controls {
+  @apply !left-6 !bottom-6 !bg-white !border !border-[#cbd5e1] !rounded-[4px] !shadow-none !p-1;
+}
+
+.viewer-canvas .react-flow__node {
+  outline: none !important;
+}
+
+.viewer-canvas .react-flow__node:focus,
+.viewer-canvas .react-flow__node:focus-visible {
+  outline: none !important;
+}

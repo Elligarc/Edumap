@@ -1,0 +1,81 @@
+@reference '@/app/styles/global.css';
+
+.home-features {
+  @apply w-full py-20 sm:py-24 bg-white border-b border-slate-200;
+}
+
+.home-features-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-12 sm:gap-16 text-center;
+}
+
+.home-features-header {
+  @apply flex flex-col gap-4 max-w-3xl mx-auto;
+}
+
+.home-features-title {
+  @apply text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight leading-tight;
+}
+
+.home-features-subtitle {
+  @apply text-base sm:text-lg text-slate-500 leading-relaxed font-normal;
+}
+
+.home-features-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 text-left items-stretch;
+}
+
+.home-feature-card {
+  @apply bg-slate-50 border border-slate-100 rounded-[24px] p-7 sm:p-8 flex flex-col justify-between transition-all duration-200 relative;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.02);
+}
+
+.home-feature-card:hover {
+  @apply border-slate-200 bg-white;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+}
+
+.home-feature-card-content {
+  @apply flex flex-col gap-3 relative z-10;
+}
+
+.home-feature-icon-box {
+  @apply w-14 h-14 rounded-[16px] bg-white border border-slate-100 flex items-center justify-center mb-2 shrink-0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.home-feature-card-title {
+  @apply text-lg sm:text-xl font-bold text-slate-900 tracking-tight;
+}
+
+.home-feature-card-desc {
+  @apply text-sm sm:text-base text-slate-600 leading-relaxed font-normal;
+}
+
+.home-feature-card-footer {
+  @apply mt-6 pt-2 relative z-10;
+}
+
+.home-feature-action-btn {
+  @apply inline-flex items-center gap-2 text-sm font-semibold text-[#0284c7] hover:text-[#0369a1] bg-white hover:bg-sky-50/60 border border-slate-200 hover:border-[#0284c7]/40 px-4 py-2 rounded-xl shadow-xs hover:shadow-sm transition-all duration-150 cursor-pointer no-underline w-fit;
+}
+
+.home-feature-action-btn:hover svg {
+  @apply translate-x-0.5 transition-transform;
+}
+
+.home-feature-action-btn:focus-visible {
+  @apply outline-none ring-2 ring-[#0284c7]/30;
+}
+
+/* Стили карточки геймификации с графиком */
+.home-feature-card--gamification {
+  @apply overflow-hidden;
+}
+
+.home-feature-gamification-bg {
+  @apply absolute bottom-0 left-0 right-0 w-full h-24 pointer-events-none opacity-40 transition-opacity duration-200 z-0;
+}
+
+.home-feature-card--gamification:hover .home-feature-gamification-bg {
+  @apply opacity-60;
+}
